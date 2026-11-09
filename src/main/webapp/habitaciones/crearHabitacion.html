@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registrar Habitación</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+
+            <h2>🏨 Hotel Los Chigüiros</h2>
+
+            <ul>
+
+                <li><a href="../dashboard/dashboard.html">
+                    Dashboard
+                </a></li>
+
+                <li><a href="#">
+                    Habitaciones
+                </a></li>
+
+                <li><a href="#">
+                    Reservas
+                </a></li>
+
+                <li><a href="#">
+                    Clientes
+                </a></li>
+
+                <li><a href="#">
+                    Empleados
+                </a></li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="contenido">
+
+            <h1>Registrar Habitación</h1>
+
+            <form class="formulario" action="../HabitacionServlet" method="post">
+
+                <label>
+                    Número de Habitación
+                </label>
+
+                <input
+                    type="text"
+                    name="numeroHabitacion"
+                    placeholder="Ejemplo: 101"
+                    required>
+
+                <label>
+                    Tipo
+                </label>
+
+                <select name="tipo" required>
+
+                    <option>
+                        Sencilla
+                    </option>
+
+                    <option>
+                        Doble
+                    </option>
+
+                    <option>
+                        Familiar
+                    </option>
+
+                </select>
+
+                <label>
+                    Precio
+                </label>
+
+                <input
+                    type="number"
+                    name="precio"
+                    placeholder="120000"
+                    required>
+
+                <label>
+                    Estado
+                </label>
+
+               <select name="estado" required>
+
+                    <option>
+                        Disponible
+                    </option>
+
+                    <option>
+                        Ocupada
+                    </option>
+
+                    <option>
+                        Mantenimiento
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Guardar Habitación
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

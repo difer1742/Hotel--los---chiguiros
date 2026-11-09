@@ -1,8 +1,13 @@
 com\hotel_los_chiguiros\config\Conexion.class
+com\hotel_los_chiguiros\model\Habitacion.class
 com\hotel_los_chiguiros\JakartaRestConfiguration.class
 com\hotel_los_chiguiros\resources\JakartaEE10Resource.class
-com\hotel_los_chiguiros\dao\UsuarioDAO.class
+com\hotel_los_chiguiros\controller\PruebaListarHabitaciones.class
+com\hotel_los_chiguiros\dao\HabitacionDAO.class
 com\hotel_los_chiguiros\controller\LoginServlet.class
 com\hotel_los_chiguiros\controller\PruebaLogin.class
 com\hotel_los_chiguiros\model\Usuario.class
 com\hotel_los_chiguiros\controller\PruebaConexion.class
+com\hotel_los_chiguiros\controller\HabitacionServlet.class
+com\hotel_los_chiguiros\dao\UsuarioDAO.class
+com\hotel_los_chiguiros\controller\PruebaHabitacion.class
