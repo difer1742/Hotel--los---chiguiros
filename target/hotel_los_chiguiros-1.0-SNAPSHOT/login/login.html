@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <div class="contenedor-login">
+            <div class="card-login">
+                <h2>Hotel los Chiguiros </h2>
+                
+               <form action="/hotel_los_chiguiros/LoginServlet" method="POST">
+                    <div class="grupo">
+                        <label for="usuario">Usuario</label>
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Ingrese su usuario"
+                            required>                      
+                    </div> 
+                    <div class="grupo">
+                        <label for="password">Usuario</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Ingrese su contraseña"
+                            required>                       
+                    </div> 
+                    
+                    <button type="submit">
+                        Ingresar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
