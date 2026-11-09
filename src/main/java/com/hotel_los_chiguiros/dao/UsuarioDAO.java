@@ -22,19 +22,12 @@ public class UsuarioDAO {
         try{
             Connection con = Conexion.conectar();
             if(con == null){
-
-                    System.out.println("❌ LA CONEXION ES NULL");
-
                     return null;
 
                 }else{
 
-                    System.out.println("✅ LA CONEXION NO ES NULL");
-
                 }
-            System.out.println("Usuario buscado: " + usuario);
-            System.out.println("Password buscado: " + password);
-            
+                    
             
             String sql =
                     "SELECT * FROM usuarios " +
@@ -52,8 +45,7 @@ public class UsuarioDAO {
 
             if(rs.next()){
 
-                System.out.println("✅ Registro encontrado en BD");
-
+               
                 usuarioEncontrado = new Usuario();
 
                 usuarioEncontrado.setIdUsuario(
@@ -69,8 +61,6 @@ public class UsuarioDAO {
                         rs.getInt("id_rol"));
 
             }else{
-
-             System.out.println("❌ No encontró registros");
 
 }
     }catch(Exception e){

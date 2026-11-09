@@ -28,22 +28,19 @@ public class LoginServlet  extends HttpServlet{
         String password=
                 request.getParameter("password");
         
-        System.out.println("Usuario recibido: " + usuario);
-        System.out.println("Password recibido: " + password);
         
         UsuarioDAO dao = new UsuarioDAO();
         
         Usuario usuarioEncontrado = 
                 dao.validarUsuario(usuario, password);
         
-        System.out.println("Resultado: " + usuarioEncontrado);
         
         if (usuarioEncontrado != null){
             
             response.sendRedirect("dashboard.html");
         }else {
             response.getWriter().println(
-                        "<h1> Usuario o contraseña Incorreectos ");
+                        "<h1> Usuario o contraseña Incorrectos ");
         }
         
     }
