@@ -37,7 +37,7 @@ public class LoginServlet  extends HttpServlet{
         
         if (usuarioEncontrado != null){
             
-            response.sendRedirect("dashboard.html");
+            response.sendRedirect("dashboard/dashboard.html");
         }else {
             response.getWriter().println(
                         "<h1> Usuario o contraseña Incorrectos ");
